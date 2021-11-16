@@ -1,0 +1,55 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>9b3a5277-04eb-496e-b7b2-29e667063d04</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>PythonApplication2.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>PythonApplication2</Name>
+    <RootNamespace>PythonApplication2</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="ARCH\V2\1List\class1.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ARCH\V3\AllinOne_VersionControl.py" />
+    <Compile Include="ARCH\V3\Dustin_TestData_UseThis.py" />
+    <Compile Include="PythonApplication2.py" />
+    <Compile Include="ARCH\V2\1List\OneList_V4.py" />
+    <Compile Include="ARCH\V2\1List\OneList_V3.py" />
+    <Compile Include="ARCH\V2\1List\OneList_V2.py" />
+    <Compile Include="ARCH\V2\1List\OneList_V1.py" />
+    <Compile Include="ARCH\V2\2List\TwoLists_V4.py" />
+    <Compile Include="ARCH\V2\2List\TwoLists_V3.py" />
+    <Compile Include="ARCH\V2\2List\TwoLists_V2.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ARCH\V4\" />
+    <Folder Include="ARCH\V3\" />
+    <Folder Include="ARCH\V2\1List\" />
+    <Folder Include="ARCH\V2\2List\" />
+    <Folder Include="ARCH\" />
+    <Folder Include="ARCH\V2\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
